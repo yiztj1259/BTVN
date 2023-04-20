@@ -16,7 +16,7 @@ namespace BTVN_T3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NhapHang.Frm_NhapHang());
+            Application.Run(new NhapHang.Frm_ChiTietNhapHang());
         }
     }
 }

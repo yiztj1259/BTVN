@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoDuLieu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoDuLieu.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DTO\LoaiChucNang.cs" />
     <Compile Include="Frm_DonViTinh.cs">
       <SubType>Form</SubType>
@@ -72,6 +77,18 @@
       <DependentUpon>Frm_SanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="BienToanCuc.cs" />
+    <Compile Include="NhapHang\Frm_BaoCaoNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHang\Frm_BaoCaoNhapHang.Designer.cs">
+      <DependentUpon>Frm_BaoCaoNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapHang\Frm_ChiTietNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHang\Frm_ChiTietNhapHang.Designer.cs">
+      <DependentUpon>Frm_ChiTietNhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhapHang\Frm_NhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +117,12 @@
     <EmbeddedResource Include="Frm_SanPham.resx">
       <DependentUpon>Frm_SanPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhapHang\Frm_BaoCaoNhapHang.resx">
+      <DependentUpon>Frm_BaoCaoNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHang\Frm_ChiTietNhapHang.resx">
+      <DependentUpon>Frm_ChiTietNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhapHang\Frm_NhapHang.resx">
       <DependentUpon>Frm_NhapHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +136,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BoDuLieu.xsc">
+      <DependentUpon>BoDuLieu.xsd</DependentUpon>
+    </None>
+    <None Include="BoDuLieu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoDuLieu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BoDuLieu.xss">
+      <DependentUpon>BoDuLieu.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -18,7 +18,7 @@ namespace BTVN_T3.TangDuLieu
         KetNoi ketNoi;
 
         public CoSoDuLieu() {
-            ketNoi = new KetNoi("WHITERUN", "Data_BanHang_HocTap", "sa", "MatKhauSQL", false);
+            ketNoi = new KetNoi(".", "Data_BanHang_HocTap", "sa", "MatKhauSQL", false);
             ketNoiSQL = new SqlConnection()
             {
                 ConnectionString = ketNoi.LayChuoiKetNoi()

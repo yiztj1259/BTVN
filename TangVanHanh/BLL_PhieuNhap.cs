@@ -54,5 +54,13 @@ namespace BTVN_T3.TangVanHanh
 
             return duLieu.ThucThiThuTuc(ref loi, "YSP_PhieuNhap_Insert202303", CommandType.StoredProcedure, thamSoSQL);
         }
+
+        public DataTable LayDuLieuChiTietPhieuNhapTheoNgay(ref String loi, DateTime ngayBatDau, DateTime ngayKetThuc)
+        {
+            return duLieu.DocDuLieuDataTable(ref loi, "PSP_ChiTietNhapHang_LayChiTietNhapHang", CommandType.StoredProcedure,
+                new SqlParameter("@TuNgay", ngayBatDau),
+                new SqlParameter("@DenNgay", ngayKetThuc));
+        }
+
     }
 }
