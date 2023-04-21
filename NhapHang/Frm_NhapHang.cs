@@ -65,7 +65,9 @@ namespace BTVN_T3.NhapHang
 
         private String TaoPhieuMoi()
         {
-            return bllPN.SinhMaPhieuMoi(ref loi);
+            String maPhieuNhap_MOI = String.Empty;
+            maPhieuNhap_MOI = bllPN.SinhMaPhieuMoi(ref loi);
+            return maPhieuNhap_MOI;
         }
 
         private bool KiemTraPhieuNhapTonTaiTheoUser(string maNhanVien)

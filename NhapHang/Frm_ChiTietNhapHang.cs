@@ -113,5 +113,13 @@ namespace BTVN_T3.NhapHang
 
             dgvChiTietNhapHang.DataSource = dataView;
         }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            Frm_BaoCaoNhapHang frm_BaoCao = new Frm_BaoCaoNhapHang();
+            frm_BaoCao.ngayBatDau = dtpNgayBatDau.Value;
+            frm_BaoCao.ngayKetThuc = dtpNgayKetThuc.Value;
+            frm_BaoCao.ShowDialog();
+        }
     }
 }

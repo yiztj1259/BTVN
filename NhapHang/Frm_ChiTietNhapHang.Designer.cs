@@ -50,6 +50,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtLoc = new System.Windows.Forms.TextBox();
             this.btnSapXep = new System.Windows.Forms.Button();
+            this.btnBaoCao = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietNhapHang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,7 +199,7 @@
             // cbxCot
             // 
             this.cbxCot.FormattingEnabled = true;
-            this.cbxCot.Location = new System.Drawing.Point(493, 10);
+            this.cbxCot.Location = new System.Drawing.Point(539, 9);
             this.cbxCot.Name = "cbxCot";
             this.cbxCot.Size = new System.Drawing.Size(123, 21);
             this.cbxCot.TabIndex = 6;
@@ -206,7 +207,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(464, 13);
+            this.label3.Location = new System.Drawing.Point(510, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 13);
             this.label3.TabIndex = 7;
@@ -232,7 +233,7 @@
             // 
             // txtLoc
             // 
-            this.txtLoc.Location = new System.Drawing.Point(622, 10);
+            this.txtLoc.Location = new System.Drawing.Point(668, 9);
             this.txtLoc.Name = "txtLoc";
             this.txtLoc.Size = new System.Drawing.Size(136, 20);
             this.txtLoc.TabIndex = 10;
@@ -241,7 +242,7 @@
             // 
             // btnSapXep
             // 
-            this.btnSapXep.Location = new System.Drawing.Point(764, 8);
+            this.btnSapXep.Location = new System.Drawing.Point(810, 7);
             this.btnSapXep.Name = "btnSapXep";
             this.btnSapXep.Size = new System.Drawing.Size(75, 23);
             this.btnSapXep.TabIndex = 11;
@@ -249,11 +250,22 @@
             this.btnSapXep.UseVisualStyleBackColor = true;
             this.btnSapXep.Click += new System.EventHandler(this.btnSapXep_Click);
             // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.Location = new System.Drawing.Point(438, 8);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(57, 23);
+            this.btnBaoCao.TabIndex = 12;
+            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            // 
             // Frm_ChiTietNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 402);
+            this.Controls.Add(this.btnBaoCao);
             this.Controls.Add(this.btnSapXep);
             this.Controls.Add(this.txtLoc);
             this.Controls.Add(this.label4);
@@ -299,5 +311,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNhanVien;
         private System.Windows.Forms.TextBox txtLoc;
         private System.Windows.Forms.Button btnSapXep;
+        private System.Windows.Forms.Button btnBaoCao;
     }
 }

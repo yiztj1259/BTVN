@@ -18,7 +18,7 @@ namespace BTVN_T3.TangVanHanh
             duLieu = new CoSoDuLieu();
         }
 
-        public String LayPhieuNhapChuaHoanThanh(ref String loi, string maNhanVien)
+        public String LayPhieuNhapChuaHoanThanh(ref String loi, String maNhanVien)
         {
             SqlParameter[] thamSoSQL = new SqlParameter[]
             {
@@ -57,9 +57,23 @@ namespace BTVN_T3.TangVanHanh
 
         public DataTable LayDuLieuChiTietPhieuNhapTheoNgay(ref String loi, DateTime ngayBatDau, DateTime ngayKetThuc)
         {
-            return duLieu.DocDuLieuDataTable(ref loi, "PSP_ChiTietNhapHang_LayChiTietNhapHang", CommandType.StoredProcedure,
-                new SqlParameter("@TuNgay", ngayBatDau),
-                new SqlParameter("@DenNgay", ngayKetThuc));
+            SqlParameter[] thamSoSQL = new SqlParameter[]
+            {
+                new SqlParameter("@NgayBatDau", ngayBatDau),
+                new SqlParameter("@NgayKetThuc", ngayKetThuc),
+            };
+
+            return duLieu.DocDuLieuDataTable(ref loi, "YSP_ChiTietNhapHang_LayChiTietNhapHang", CommandType.StoredProcedure, thamSoSQL);
+        }
+
+        public DataTable LayThongTinInPhieuNhap(ref String loi, String maPhieuNhap)
+        {
+            SqlParameter[] thamSoSQL = new SqlParameter[]
+            {
+                new SqlParameter("@MaPhieuNhap", maPhieuNhap),
+            };
+
+            return duLieu.DocDuLieuDataTable(ref loi, "YSP_PhieuNhap_InPhieuNhapHang", CommandType.StoredProcedure, thamSoSQL);
         }
 
     }
